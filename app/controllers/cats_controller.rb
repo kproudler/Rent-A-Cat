@@ -16,4 +16,15 @@ class CatsController < ApplicationController
         end
     end
 
+    def new
+        @cat = Cat.new
+        render :new
+    end
+
+    def create
+        render json: "creating cat"
+    end
+
+    
+
 end
